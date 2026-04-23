@@ -1,0 +1,31 @@
+.heroBanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+    height: 90dvh;
+}
+.heroTitle{
+    order: 2;
+    align-self: center;
+}
+.heroSubtitle{
+    order: 1;
+    align-self: flex-start;
+    margin-top: var(--spacing-lg);
+}
+.highlight {
+    display: inline-block;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
+    opacity: 1;
+    transform: translateY(0);
+}
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.fade-in-top {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: none;
+}

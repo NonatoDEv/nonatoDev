@@ -20,33 +20,35 @@
     <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/base.css">
     <!--- main css-->
-
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/small.css">
     <!--- title-->
-    <title>nonatoDev resume</title>
+    <title>nonatoDev || software developer</title>
     <!--- favicon-->
     <link rel="icon" href="images">
+    <script type="module" src="scripts/app-controler.js"></script>
 </head>
 <body>
     <header>
         <div>
-            <span><a href="index.html">Abel J. Nonato Avalos</a></span>
+            <a class="logoLink" href="index.html"><span id="logo-text"></span></a>
         </div>
+        <nav class="navMenu" id="navMenu">
+            <ul class="navList">
+                <li><a class="navLink active" href="index.html">Home</a></li>
+                <li><a class="navLink" href="projects.html">Projects</a></li>
+                <li><a class="navLink" href="contact.html">Contact me</a></li>
+                <li><a class="navLink" href="hobbies.html">hobbies</a></li>
+            </ul>
+        </nav>
         <button class="hamButton" id="menuToggle" aria-label="open menu navigation">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        <nav>
-            <ul>
-                <li><a href=""></a>Home</li>
-                <li><a href=""></a>Projects</li>
-                <li><a href=""></a>Contact me</li>
-                <li><a href=""></a>hobbies</li>
-            </ul>
-        </nav>
     </header>
     <main>
-        
+        <section class="heroBanner" id="containerHero"></section>
     </main>
     <footer>
     </footer>
