@@ -2,11 +2,16 @@
   "personalInfo": {
     "fullName": "Abel Jesus Nonato Avalos",
     "shortName": "Abel J. Nonato",
+    "description": "<strong>While many learned to code in controlled environments, I built my foundation in the real world, where there was no margin for error.</strong> This shaped a fundamental approach to my work: I don’t build for the sake of using trendy stacks; I build because there’s a problem that needs a robust solution. I prioritize foundations over frameworks and purpose over hype. My goal is simple: to ship software that works, lasts, and solves real-world challenges.",
     "roles": [
+      "Lucy's Dad",
+      "Assistant cardboard box assembler",
       "Software Developer",
       "Front-end Developer",
       "Web Designer",
-      "Software Artisan"
+      "Software Artisan",
+      "BYU Alumni"
+      
     ]
   }
 }

@@ -7,17 +7,17 @@ async function initApp() {
 
         const header = new Header(data.personalInfo.shortName);
         header.render();
-
         const heroBanner = new Hero(
             'containerHero',
             data.personalInfo.fullName,
-            data.personalInfo.roles
+            data.personalInfo.roles,
+            data.personalInfo.description
         );
         heroBanner.render();
-
         console.log("System is up and running with data:", data);
 
-    } catch (error) {
+    } 
+    catch (error) {
         console.error('Error fetching data:', error);
     }
 }
