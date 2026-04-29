@@ -114,3 +114,30 @@ header{
     background-color: var(--gray);
     color: var(--black);
 }
+@media screen and (min-width: 1024px) {
+    .hamButton {
+        display: none;
+    }
+    .navMenu {
+        position: static;
+        height: auto;
+        width: auto;
+        opacity: 1;
+        visibility: visible;
+        background-color: var(--white);
+        display: block;
+    }
+    .navList {
+        flex-direction: row;
+        gap: var(--spacing-lg);
+    }
+    .navLink {
+        font-size: var(--spacing-md);
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+    .navLink:hover {
+        transform: translateY(-2px);
+        background-color: var(--gray);
+        color: red;
+    }
+}

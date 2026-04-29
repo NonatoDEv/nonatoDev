@@ -2,7 +2,7 @@
     display: grid;
     grid-template-rows: 440px 1fr 1fr;
     gap: var(--spacing-sm);
-    height: 90dvh;
+    height: 100dvh;
 }
 .heroTitle{
     order: 2;
