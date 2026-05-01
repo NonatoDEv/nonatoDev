@@ -1,5 +1,5 @@
-import { Header } from '/data/header.js';
-import { Hero } from '/data/hero.js';
+import { Header } from '../data/header.js';
+import { Hero } from '../data/hero.js';
 
 async function initApp() {
     try {
