@@ -2,16 +2,44 @@
   "personalInfo": {
     "fullName": "Abel Jesus Nonato Avalos",
     "shortName": "Abel J. Nonato",
-    "description": "<strong>While many learned to code in controlled environments, I built my foundation in the real world, where there was no margin for error.</strong> This shaped a fundamental approach to my work: I don’t build for the sake of using trendy stacks; I build because there’s a problem that needs a robust solution. I prioritize foundations over frameworks and purpose over hype. My goal is simple: to ship software that works, lasts, and solves real-world challenges.",
     "roles": [
       "Lucy's Dad",
-      "Assistant cardboard box assembler",
+      "Box Assembly Assistant",
+      "BYU Alumni",
       "Software Developer",
       "Front-end Developer",
       "Web Designer",
-      "Software Artisan",
-      "BYU Alumni"
-      
+      "Software Artisan"
     ]
-  }
+  },
+  "projects": [
+    {
+        "title": "Poke Data Pro",
+        "description": "Requesting data from the Poke API and displaying it in a user-friendly interface. The project includes features such as searching for specific Pokémon, filtering by type, and viewing detailed information about each Pokémon.",
+        "tags": ["JS", "API", "CSS", "HTML"],
+        "github": "https://github.com/NonatoDEv/wdd231/tree/main/project",
+        "link": "https://nonatodev.github.io/wdd231/project/index.html"
+    },
+    {
+        "title": "Chincha Chamber Commerce",
+        "description": "A website for a local business. The project includes features such as a homepage with information about the company, a page for services offered, and a contact page. The website is designed to be visually appealing and easy to navigate.",
+        "tags": ["JS","API","CSS", "HTML"],
+        "github": "https://github.com/NonatoDEv/wdd231/tree/main/chamber",
+        "link": "https://nonatodev.github.io/wdd231/chamber/index.html"
+    },
+    {
+        "title": "Baby Lucy's Store",
+        "description": "A simple e-commerce website for baby products. The project includes features such as product listings, a shopping cart, and a checkout process. The website is designed to be responsive and user-friendly.",
+        "tags": ["JS", "CSS", "HTML"],
+        "github": "https://github.com/NonatoDEv/wdd131/tree/main/project",
+        "link": "https://nonatodev.github.io/wdd131/project/site.html"
+    },
+    {
+        "title": "WhiteWater Rafting",
+        "description": "A website for a whitewater rafting company. The project includes features such as a homepage with information about the company, a page for booking rafting trips, and a gallery of photos from past trips. The website is designed to be visually appealing and easy to navigate.",
+        "tags": ["CSS", "HTML"],
+        "github": "https://github.com/NonatoDEv/wdd130/tree/main/wwr",
+        "link": "https://nonatodev.github.io/wdd130/wwr/index.html"
+    }
+  ]
 }

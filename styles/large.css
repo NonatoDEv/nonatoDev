@@ -24,15 +24,4 @@
         max-width: 900px;
         word-break: break-word;
     }
-    .heroDescription {
-        order: 3;
-        margin-top: var(--spacing-lg);
-        padding: var(--spacing-md) var(--spacing-lg);
-        text-align: left;
-        align-self: flex-start;
-        max-width: 100vw; 
-        font-size: var(--spacing-xl);
-        background-color: var(--black);
-        color: var(--white);
-    }
 }
