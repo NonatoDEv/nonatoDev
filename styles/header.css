@@ -1,5 +1,4 @@
 header{
-    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,7 +11,7 @@ header{
     height: 75px;
 }
 .logoLink {
-    color: var(--black);
+    color: var(--text);
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
@@ -20,11 +19,25 @@ header{
     font-size: var(--spacing-md);
     font-weight: 700;
 }
+.light-dark-button {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    background-color: var(--background);
+    color: var(--text);
+    border: none;
+    cursor: pointer;
+
+}
+#theme-toggle:active .theme-icon {
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+}
 .hamButton{
     width: 40px;
     height: 30px;
     position: relative;
-    background-color: transparent;
+    background-color: var(--background);
     border: none;
     cursor: pointer;
     z-index: 1001;
@@ -36,7 +49,7 @@ header{
     display: block;
     width: 100%;
     height: 4px;
-    background-color: var(--black);
+    background-color: var(--text);
     border-radius: 25%;
     transition: all var(--transition-normal);
     transform-origin: center center;
@@ -57,7 +70,7 @@ header{
     left: 0;
     width: 100%;
     height: calc(100dvh - 75px);
-    background-color: var(--white);
+    background-color: var(--background);
     z-index: 999;
     opacity: 0;
     visibility: hidden;
@@ -80,7 +93,7 @@ header{
     right: -100%;
     width: 40%;
     height: 100vh;
-    background-color: var(--black);
+    background-color: var(--background);
     flex-direction: column;
     padding-top: 80px;
     transition: right 0.4s ease-in-out;
@@ -97,7 +110,7 @@ header{
     text-align: center;
 }
 .navLink {
-    color: var(--black);
+    color: var(--text);
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--radius-md);
     transition: background-color var(--transition-fast);
@@ -111,8 +124,8 @@ header{
 .navLink:hover,
 .navLink.active {
     transform: scale(1.1);
-    background-color: var(--gray);
-    color: var(--black);
+    background-color: var(--accent);
+    color: var(--background);
 }
 @media screen and (min-width: 1024px) {
     .hamButton {
@@ -124,7 +137,6 @@ header{
         width: auto;
         opacity: 1;
         visibility: visible;
-        background-color: var(--white);
         display: block;
     }
     .navList {
@@ -135,9 +147,13 @@ header{
         font-size: var(--spacing-md);
         padding: var(--spacing-xs) var(--spacing-sm);
     }
-    .navLink:hover {
-        transform: translateY(-2px);
-        background-color: var(--gray);
-        color: red;
+    .navLink.active{
+        background-color: var(--accent);
+        color: var(--background);
+        
+        box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
+        transform: translateY(0);
+        font-weight: bold;
+        cursor: default;
     }
 }

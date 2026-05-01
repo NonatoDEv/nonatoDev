@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="Abel J. Nonato Avalos | nonatoDev">
     <!--- og property-->
-    <meta name="description" content="Welcome to nonatoDev's resume. Explore my skills, experience, and projects in software development.">
-    <meta property="og:title" content="nonatoDev resume">
+    <meta name="description" content="Welcome to nonatoDev's portfolio. Explore my skills, experience, and projects in software development.">
+    <meta property="og:title" content="nonatoDev portfolio">
     <meta property="og:description" content="here, you could find about me and my experience in software development">
     <meta property="og:image" content="">
     <meta property="og:url" content="https://nonatodev.github.io/nonatodev/index.html">
@@ -36,12 +36,32 @@
         <div>
             <a class="logoLink" href="index.html"><span id="logo-text"></span></a>
         </div>
+        <button class="light-dark-button" id="lightDarkToggle" 
+            type="button" 
+            aria-label="Change light and dark mode">
+            <svg 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+                class="theme-icon"
+                >
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M20 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M3 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 20L12 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 3L12 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M17.6569 17.6569L18.364 18.364" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M5.63605 5.63604L6.34315 6.34315" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M6.34314 17.6569L5.63603 18.364" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M18.364 5.63604L17.6568 6.34315" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
         <nav class="navMenu" id="navMenu">
             <ul class="navList">
-                <li><a class="navLink active" href="index.html">Home</a></li>
-                <li><a class="navLink" href="projects.html">Projects</a></li>
-                <li><a class="navLink" href="contact.html">Contact me</a></li>
-                <li><a class="navLink" href="hobbies.html">hobbies</a></li>
+                <li><a class="navLink active" href="#containerHero">Home</a></li>
+                <li><a class="navLink" href="#containerProjects">Projects</a></li>
+                <li><a class="navLink" href="#containerPhilosophy">philosophy</a></li>
+                <li><a class="navLink" href="#containerContactMe">contact me</a></li>
             </ul>
         </nav>
         <button class="hamButton" id="menuToggle" aria-label="open menu navigation">
@@ -52,7 +72,9 @@
     </header>
     <main>
         <section class="heroBanner" id="containerHero"></section>
-        <section class="bragZone"></section>
+        <section class="projects" id="containerProjects"></section>
+        <section class="philosophy" id="containerPhilosophy"></section>
+        <section class="contact-me" id="containerContactMe"></section>
     </main>
     <footer>
     </footer>

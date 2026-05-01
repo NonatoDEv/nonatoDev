@@ -1,8 +1,4 @@
 :root{
-    /*colors*/
-    --white:#ffffff;
-    --black:#000000;
-    --gray: #f0f0f0;
     /*typography*/
     --font-family: 'Roboto', sans-serif;
     /*spacing*/ 
@@ -33,4 +29,15 @@
     --radius-md: 8px;
     --radius-lg: 12px;
     --radius-full: 50%;
+    /*colors*/
+    --background:#000000;
+    --text:#d4cebd;
+    --accent:#Fafaf9;
+    --ui-border: #262626;
+    [data-theme="light"] {
+    --background: #d4cebd;
+    --text: #000000;
+    --accent: #0c0c0c;
+    --ui-border: #fafaf9;
+    }
 }
