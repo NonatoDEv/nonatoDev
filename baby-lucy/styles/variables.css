@@ -1,0 +1,51 @@
+:root{
+    /* Baby Lucy colors */
+    --color-primary: #7A0054;
+    --color-primary-dark: #560039;
+    --color-primary-light: #9B006A;
+    --color-accent: #FFB3E2;
+    --color-accent-dark: #FF80CC;
+    --color-white: #FFFFFF;
+    --color-background: #FFF5FB;
+    --color-text-primary: #2A0020;
+    --color-text-secondary: #7A0054;
+    --color-text-muted: #999;
+    --color-border: #F0C0E0;
+    --color-danger: #D32F2F;
+    --color-success: #2E7D32;
+    /* fonts */
+    --font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+    /*spacing*/ 
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    /*breakpoints*/
+    --mobile-max: 640px;
+    --tablet-min: 641px;
+    --tablet-max: 1024px;
+    --desktop-min: 1025px;
+    /*container widths*/
+    --container-mobile: 100%;
+    --container-tablet: 95%;
+    --container-desktop: 1200px;
+    /*transitions*/
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    /*shadows*/
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+    /*border radius*/
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-full: 50%;
+}
