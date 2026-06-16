@@ -15,7 +15,6 @@ export class UIManager {
     //  shows the header, sets the welcome message,
     //  and registers the logout button.
     configurar(session) {
-        console.log(session.user.user_metadata)
         document.getElementById('app').innerHTML = renderNav();
         document.getElementById('header').style.display = 'flex';
         const nombre = session.user.user_metadata?.full_name ?? session.user.email;
