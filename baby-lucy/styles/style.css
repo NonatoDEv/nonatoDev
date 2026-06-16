@@ -1,0 +1,16 @@
+.btn {
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+}
+@media screen and (min-width: 641px) {
+    .container {
+        max-width: var(--container-tablet);
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .container {
+        max-width: var(--container-desktop);
+        margin: 0 auto;
+    }
+}
