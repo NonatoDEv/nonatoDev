@@ -15,9 +15,11 @@ export class UIManager {
     //  shows the header, sets the welcome message,
     //  and registers the logout button.
     configurar(session) {
+        console.log(session.user.user_metadata)
         document.getElementById('app').innerHTML = renderNav();
         document.getElementById('header').style.display = 'flex';
-        document.getElementById('bienvenida').textContent = `Hola, ${session.user.email}`;
+        const nombre = session.user.user_metadata?.full_name ?? session.user.email;
+        document.getElementById('bienvenida').textContent = `Hola, ${nombre}`;
         document.getElementById('btn-logout').onclick = () => this.auth.logout();
     }
 }
