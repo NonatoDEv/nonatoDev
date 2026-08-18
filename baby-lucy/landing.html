@@ -21,28 +21,44 @@
     <!--- Tittle -->
     <title>Bienvenido a baby Lucy</title>
     <!--- JS -->
+    <script defer src="scripts/hamButton.js"></script>
     <!--- favicon -->
 </head>
 <body>
-    <header class="glass-panel main-header">
+    <header class="main-header">
         <div>
-            <a href="landing.html" class="logo-link">
-                <img src="images/baby-lucy.webp" alt="A baby lucy logo">
-            </a>
+            <span class="logo-text"><a href="landing.html" class="logo-link">baby Lucy</a></span>
         </div>
         <button class="hamButton" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">
             <span class="hamButton__line"></span>
             <span class="hamButton__line"></span>
             <span class="hamButton__line"></span>
         </button>
-        <nav>
-            <ul>
-                <li><a href="products.html">Inicio</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+        <nav class="nav-menu" id="menu">
+            <ul class="nav-list">
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">¿Quienes Somos?</a></li>
             </ul>
+            <a class="btn-contacto" href="">Quiero asesoria para mi bebe</a>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="hero-section">
+            <div class="hero-bg">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/baby-by-b5zero.webp">
+                    <img src="images/baby-by-publicdomainpictures.webp" class="hero-img" alt="bebe durmiendo placidamente con su ropa de baby lucy">
+                </picture>
+                <div class="hero-overlay"></div>
+            </div>
+            <article class="hero-content">
+                <h1 class="hero-title">Ropita suave, comoda y de alta calidad para tu bebe</h1>
+                <p class="hero-description">Diseños que cuidan su piel y facilitan el dia a dia</p>
+                <p class="hero-description">Atencion cercana desde Chincha: te ayudamos a elegir y te lo entregamos rapido</p>
+                <a href="" class="btn-hero">Quiero asesoria para mi bebe</a>
+            </article>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>
