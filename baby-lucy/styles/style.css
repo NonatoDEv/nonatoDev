@@ -1,3 +1,37 @@
+body {
+    background: linear-gradient(135deg, var(--color-background) 0%, var(--color-border) 100%);
+    color: var(--text-primary);
+    font-family: 'Roboto', sans-serif;
+    min-height: 100dvh;
+}
+.logo-link img {
+    width: 100px;
+    height: auto;
+
+}
+.main-header {
+    background: var(--glass-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 1200px;
+    position: sticky;
+    top: 1rem;
+    z-index: 100;
+}
+.main-header ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.main-header a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+}
 .btn {
     padding: var(--spacing-sm);
     border-radius: var(--radius-md);
