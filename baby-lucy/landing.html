@@ -22,6 +22,7 @@
     <title>Bienvenido a baby Lucy</title>
     <!--- JS -->
     <script defer src="scripts/hamButton.js"></script>
+    <script defer src="scripts/babyLucyTheme.js"></script>
     <!--- favicon -->
 </head>
 <body>
@@ -29,18 +30,37 @@
         <div>
             <span class="logo-text"><a href="landing.html" class="logo-link">baby Lucy</a></span>
         </div>
-        <button class="hamButton" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">
-            <span class="hamButton__line"></span>
-            <span class="hamButton__line"></span>
-            <span class="hamButton__line"></span>
-        </button>
+        <div class="header-controls">
+            <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+            <button class="hamButton" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">
+                <span class="hamButton__line"></span>
+                <span class="hamButton__line"></span>
+                <span class="hamButton__line"></span>
+            </button>
+        </div>
         <nav class="nav-menu" id="menu">
             <ul class="nav-list">
                 <li><a href="#">Novedades</a></li>
                 <li><a href="#">¿Quienes Somos?</a></li>
             </ul>
-            <a class="btn-contacto" href="">Quiero asesoria para mi bebe</a>
+            <a class="btn btn--header" href="">Quiero asesoria para mi bebe</a>
         </nav>
+        
     </header>
     <main>
         <section class="hero-section">
@@ -55,7 +75,7 @@
                 <h1 class="hero-title">Ropita suave, comoda y de alta calidad para tu bebe</h1>
                 <p class="hero-description">Diseños que cuidan su piel y facilitan el dia a dia</p>
                 <p class="hero-description">Atencion cercana desde Chincha: te ayudamos a elegir y te lo entregamos rapido</p>
-                <a href="" class="btn-hero">Quiero asesoria para mi bebe</a>
+                <a href="" class="btn btn--hero">Quiero asesoria para mi bebe</a>
             </article>
         </section>
     </main>

@@ -1,15 +1,13 @@
-const initNavigation = () =>{
+document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menuToggle');
-    const menu = document.getElementById('menu');
+    const navMenu = document.getElementById('menu');
 
-    if (!menuToggle || !menu) return;
+    if (!menuToggle || !navMenu) return;
 
     menuToggle.addEventListener('click', () => {
-        menu.classList.toggle('isOpen');
+        navMenu.classList.toggle('isOpen');
+        menuToggle.classList.toggle('is-active');
         const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
         menuToggle.setAttribute('aria-expanded', !isExpanded);
-        menuToggle.classList.toggle('is-active');
     });
-    };
-
-document.addEventListener('DOMContentLoaded', initNavigation);
+});
