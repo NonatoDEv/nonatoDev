@@ -180,15 +180,18 @@ body{
     color: var(--color-white);
     font-size: var(--font-size-2xl);
     line-height: 1.2;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
     text-shadow: var(--shadow-md);
 }
 .hero-description {
     color: var(--color-white);
     font-size: 1.1rem;
     line-height: 1.4;
-    margin-bottom: 2rem;
+    margin-bottom: var(--spacing-sm);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.hero-description:last-of-type {
+    margin-bottom: 2rem; 
 }
 .btn--hero {
     padding: 1rem 2rem;
