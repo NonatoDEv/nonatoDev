@@ -63,10 +63,10 @@ const buildPainSection = (data) => {
     section.className = 'pain-section fade-in-section';
     section.id = 'dolor-piel';
 
-    const container = document.createElement('div');
+    const container = document.createElement('section');
     container.className = 'container';
 
-    const header = document.createElement('header');
+    const header = document.createElement('article');
     header.className = 'section-header';
     header.innerHTML = `
         <span class="badge-alert">${data.badge}</span>
@@ -83,7 +83,7 @@ const buildPainSection = (data) => {
     });
     grid.appendChild(fragment);
 
-    const footer = document.createElement('footer');
+    const footer = document.createElement('article');
     footer.className = 'pain-footer';
     footer.innerHTML = `
         <blockquote class="pain-quote">${data.quote}</blockquote>
