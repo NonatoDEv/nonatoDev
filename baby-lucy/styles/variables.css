@@ -9,7 +9,7 @@
     --color-background: #FFF5FB;
     --color-text-primary: #2A0020;
     --color-text-secondary: #7A0054;
-    --color-text-muted: #999;
+    --color-text-muted: #555555;
     --color-border: #F0C0E0;
     --color-danger: #D32F2F;
     --color-success: #2E7D32;
@@ -64,7 +64,8 @@
     --color-background: #15000E; 
     --color-white: #220016;
     --color-text-primary: #FFF5FB; 
-    --color-text-secondary: #FFB3E2; 
+    --color-text-secondary: #FFB3E2;
+    --color-text-muted: #E2E8F0;
     --color-border: #560039; 
     /* glass dark mode */
     --glass-bg: rgba(21, 0, 14, 0.6); 
@@ -95,21 +96,21 @@
     --quote-bg: var(--glass-bg);
 }
 .theme-solution {
-    --badge-bg: color-mix(in srgb, var(--color-success) 15%, transparent);
-    --badge-color: var(--color-success);
+    --badge-bg: color-mix(in srgb, var(--color-success) 10%, transparent);
+    --badge-color: color-mix(in srgb, var(--color-success) 85%, black);
     --card-border-hover: color-mix(in srgb, var(--color-success) 40%, transparent);
-    --icon-wrapper-bg: color-mix(in srgb, var(--color-success) 12%, transparent);
+    --icon-wrapper-bg: color-mix(in srgb, var(--color-success) 10%, transparent);
     --icon-color: var(--color-success);
-    --quote-color: var(--color-success);
-    --quote-bg: color-mix(in srgb, var(--color-success) 8%, transparent);
+    --quote-color:color-mix(in srgb, var(--color-success) 85%, black);
+    --quote-bg: color-mix(in srgb, var(--color-success) 6%, transparent);
 }
 
 [data-theme="dark"] .theme-solution {
-    --badge-bg: color-mix(in srgb, var(--color-success) 25%, transparent);
-    --badge-color: color-mix(in srgb, var(--color-success) 65%, white);
+    --badge-bg: color-mix(in srgb, var(--color-success) 20%, transparent);
+    --badge-color: color-mix(in srgb, var(--color-success) 85%, white);
     --card-border: color-mix(in srgb, var(--color-success) 25%, transparent);
     --icon-wrapper-bg: color-mix(in srgb, var(--color-success) 15%, transparent);
-    --icon-color: color-mix(in srgb, var(--color-success) 65%, white);
-    --quote-color: color-mix(in srgb, var(--color-success) 65%, white);
+    --icon-color: color-mix(in srgb, var(--color-success) 85%, white);
+    --quote-color: color-mix(in srgb, var(--color-success) 85%, white);
     --quote-bg: color-mix(in srgb, var(--color-success) 10%, transparent);
 }
