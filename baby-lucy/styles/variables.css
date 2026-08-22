@@ -78,22 +78,22 @@
     --btn-hover: var(--color-accent-dark);
 }
 .theme-pain {
-    --badge-bg: color-mix(in srgb, var(--color-danger) 12%, transparent);
-    --badge-color: var(--color-danger);
+    --badge-bg: color-mix(in srgb, var(--color-danger) 8%, transparent);
+    --badge-color: color-mix(in srgb, var(--color-danger) 85%, black);
     --card-border-hover: color-mix(in srgb, var(--color-primary) 30%, transparent);
-    --icon-wrapper-bg: var(--glass-bg);
-    --icon-color: var(--color-danger);   
-    --quote-color: var(--color-danger);
-    --quote-bg: var(--glass-bg);
+    --icon-wrapper-bg: color-mix(in srgb, var(--color-primary) 5%, white);
+    --icon-color: var(--color-primary);
+    --quote-color: var(--color-primary-dark);
+    --quote-bg: color-mix(in srgb, var(--color-primary) 5%, white);
 }
 [data-theme="dark"] .theme-pain {
-    --badge-bg: color-mix(in srgb, var(--color-danger) 25%, transparent);
-    --badge-color: color-mix(in srgb, var(--color-danger) 70%, white);
-    --card-border: var(--glass-border); 
-    --icon-wrapper-bg: color-mix(in srgb, var(--color-accent) 15%, transparent);
-    --icon-color: var(--color-danger);
-    --quote-color: var(--color-danger);
-    --quote-bg: var(--glass-bg);
+    --badge-bg: color-mix(in srgb, var(--color-danger) 25%, black);
+    --badge-color: color-mix(in srgb, var(--color-danger) 85%, white);
+    --card-border: var(--glass-border);
+    --icon-wrapper-bg: color-mix(in srgb, var(--color-accent) 20%, black);
+    --icon-color: color-mix(in srgb, var(--color-accent) 90%, white);
+    --quote-color: color-mix(in srgb, var(--color-accent) 85%, white);
+    --quote-bg: color-mix(in srgb, var(--color-primary) 25%, black);    
 }
 .theme-solution {
     --badge-bg: color-mix(in srgb, var(--color-success) 10%, transparent);
