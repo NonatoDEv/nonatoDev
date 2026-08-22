@@ -54,7 +54,7 @@
     --glass-bg: rgba(255, 245, 251, 0.5);
     --glass-border: rgba(255, 255, 255, 0.4);
     --glass-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    /* Hero & Botones */
+    /* Hero & Buttons */
     --hero-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.45));
     --btn-bg: var(--color-primary);
     --btn-text: #ffffff;
@@ -70,9 +70,46 @@
     --glass-bg: rgba(21, 0, 14, 0.6); 
     --glass-border: rgba(255, 179, 226, 0.15);
     --glass-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
-    /* Hero & Botones */
+    /* Hero & Buttons */
     --hero-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
     --btn-bg: var(--color-accent);
     --btn-text: #15000E;
     --btn-hover: var(--color-accent-dark);
+}
+.theme-pain {
+    --badge-bg: color-mix(in srgb, var(--color-danger) 12%, transparent);
+    --badge-color: var(--color-danger);
+    --card-border-hover: color-mix(in srgb, var(--color-primary) 30%, transparent);
+    --icon-wrapper-bg: var(--glass-bg);
+    --icon-color: var(--color-danger);   
+    --quote-color: var(--color-danger);
+    --quote-bg: var(--glass-bg);
+}
+[data-theme="dark"] .theme-pain {
+    --badge-bg: color-mix(in srgb, var(--color-danger) 25%, transparent);
+    --badge-color: color-mix(in srgb, var(--color-danger) 70%, white);
+    --card-border: var(--glass-border); 
+    --icon-wrapper-bg: color-mix(in srgb, var(--color-accent) 15%, transparent);
+    --icon-color: var(--color-danger);
+    --quote-color: var(--color-danger);
+    --quote-bg: var(--glass-bg);
+}
+.theme-solution {
+    --badge-bg: color-mix(in srgb, var(--color-success) 15%, transparent);
+    --badge-color: var(--color-success);
+    --card-border-hover: color-mix(in srgb, var(--color-success) 40%, transparent);
+    --icon-wrapper-bg: color-mix(in srgb, var(--color-success) 12%, transparent);
+    --icon-color: var(--color-success);
+    --quote-color: var(--color-success);
+    --quote-bg: color-mix(in srgb, var(--color-success) 8%, transparent);
+}
+
+[data-theme="dark"] .theme-solution {
+    --badge-bg: color-mix(in srgb, var(--color-success) 25%, transparent);
+    --badge-color: color-mix(in srgb, var(--color-success) 65%, white);
+    --card-border: color-mix(in srgb, var(--color-success) 25%, transparent);
+    --icon-wrapper-bg: color-mix(in srgb, var(--color-success) 15%, transparent);
+    --icon-color: color-mix(in srgb, var(--color-success) 65%, white);
+    --quote-color: color-mix(in srgb, var(--color-success) 65%, white);
+    --quote-bg: color-mix(in srgb, var(--color-success) 10%, transparent);
 }

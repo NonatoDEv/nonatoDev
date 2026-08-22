@@ -1,4 +1,4 @@
-/*data template*/
+/* pain data template*/
 const painData = {
     badge: "Cuidado con su piel",
     title: "La piel de tu bebé es hasta 5 veces más fina que la tuya",
@@ -6,7 +6,7 @@ const painData = {
     points: [
         {
             iconSvg: `
-                <svg class="pain-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="feature-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
                     <line x1="12" y1="9" x2="12" y2="13"></line>
                     <line x1="12" y1="17" x2="12.01" y2="17"></line>
@@ -17,7 +17,7 @@ const painData = {
         },
         {
             iconSvg: `
-                <svg class="pain-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="feature-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <circle cx="6" cy="6" r="3"></circle>
                     <circle cx="6" cy="18" r="3"></circle>
                     <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
@@ -30,7 +30,7 @@ const painData = {
         },
         {
             iconSvg: `
-                <svg class="pain-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="feature-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="M16 16s-1.5-2-4-2-4 2-4 2"></path>
                     <line x1="9" y1="9" x2="9.01" y2="9"></line>
@@ -45,14 +45,14 @@ const painData = {
 };
 const createPainCard = ({ iconSvg, title, description }) => {
     const card = document.createElement('article');
-    card.className = 'pain-card';
+    card.className = 'feature-card';
 
     card.innerHTML = `
-        <div class="pain-icon-wrapper">
+        <div class="feature-icon-wrapper">
             ${iconSvg}
         </div>
-        <h3 class="pain-card__title">${title}</h3>
-        <p class="pain-card__desc">${description}</p>
+        <h3 class="feature-card__title">${title}</h3>
+        <p class="feature-card__desc">${description}</p>
     `;
 
     return card;
@@ -60,22 +60,22 @@ const createPainCard = ({ iconSvg, title, description }) => {
 
 const buildPainSection = (data) => {
     const section = document.createElement('section');
-    section.className = 'pain-section fade-in-section';
-    section.id = 'dolor-piel';
+    section.className = ' feature-section theme-pain fade-in-section';
+    section.id = 'dolorId';
 
     const container = document.createElement('section');
     container.className = 'container';
 
-    const header = document.createElement('article');
+    const header = document.createElement('header');
     header.className = 'section-header';
     header.innerHTML = `
-        <span class="badge-alert">${data.badge}</span>
+        <span class="badge">${data.badge}</span>
         <h2 class="section-title">${data.title}</h2>
         <p class="section-subtitle">${data.subtitle}</p>
     `;
 
-    const grid = document.createElement('div');
-    grid.className = 'pain-grid';
+    const grid = document.createElement('section');
+    grid.className = 'feature-grid';
 
     const fragment = document.createDocumentFragment();
     data.points.forEach(point => {
@@ -83,10 +83,10 @@ const buildPainSection = (data) => {
     });
     grid.appendChild(fragment);
 
-    const footer = document.createElement('article');
+    const footer = document.createElement('footer');
     footer.className = 'pain-footer';
     footer.innerHTML = `
-        <blockquote class="pain-quote">${data.quote}</blockquote>
+        <blockquote class="feature-quote">${data.quote}</blockquote>
     `;
 
     container.append(header, grid, footer);
